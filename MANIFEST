@@ -22,6 +22,8 @@ Struct/User.pm
 Struct/YearMonth.pm
 t/Toolforge-MixNMatch-Struct-Catalog/01-use.t
 t/Toolforge-MixNMatch-Struct-Catalog/02-version.t
+t/Toolforge-MixNMatch-Struct-Catalog/03-obj2struct.t
+t/Toolforge-MixNMatch-Struct-Catalog/04-struct2obj.t
 t/Toolforge-MixNMatch-Struct-User/01-use.t
 t/Toolforge-MixNMatch-Struct-User/02-version.t
 t/Toolforge-MixNMatch-Struct-User/03-obj2struct.t
