@@ -1,0 +1,64 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.83.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+SHA256 c5544e644754cf5a6618343643e5ccdc44a103f5ab374c227d5849e9537740ee Changes
+SHA256 9984f7b209d43761721f55f57d3b943c1d5308788d8d1818642db5deac235044 LICENSE
+SHA256 72e05344ac4ee345b7c6b95d8b57be7b046fa2303fbf2571a091f21d05582fb1 MANIFEST
+SHA256 e7929c9be599ae6dc1cd97abe45f229ce8182a435f5c0c312d07e8f186d99f56 META.yml
+SHA256 78af52ffffee0de3c24cad541bd961cde338af6356ddefec0491c23082c07b90 Makefile.PL
+SHA256 ff206d24ccef23fb42358fc05dbf949b9aea230973a0b66db893869c160ae18b README
+SHA256 89ddcd14bc571ef71cd1b207b7eef8bcc6a734814329d175c627d6c487ec9ab3 Struct.pm
+SHA256 69520b78faeafca517d09ce37eb96202df1351a3251248400c1de7d20ee33ea2 Struct/Catalog.pm
+SHA256 d7d1e77c0fd29241c05fbfb59ca6b5c1d7f107b4be8965204642d1fae64887bb Struct/User.pm
+SHA256 1931979bacde03aaf86d8fc4d4f7a8bfa019fa581bf929e0633cb8925dee4df1 Struct/YearMonth.pm
+SHA256 67d139199c03b8bf8447a5a62f0d0b6dc1bd5bf6dbe04de6d21998c577823ed6 inc/Module/Install.pm
+SHA256 8bd506c33fb78f10f6451413e931ca23541fcc4eebe05fcb7c7c9577341223c4 inc/Module/Install/AuthorRequires.pm
+SHA256 1b5430a46a35142ef8914d8c745196fca825defc9dfa7e389299bf294613825e inc/Module/Install/AuthorTests.pm
+SHA256 6ebcc53a161dd5dc0aae69e4704575f2b00181901d768a82e26722a309cfdbe4 inc/Module/Install/Base.pm
+SHA256 d3f8c839d03fd21c197d05362dbb277cd7cadb15da6390d124b61e851f15146e inc/Module/Install/Can.pm
+SHA256 e9e72e18921c10c87bc4ea4c20af83e52015b9f5775d00ac64073042403717ca inc/Module/Install/Fetch.pm
+SHA256 a7a681bf2c9eee58a372cb642ffe42b0301d1200432ba8de9f7791cd1ecc9827 inc/Module/Install/Makefile.pm
+SHA256 aa887fa65a5eb6bbd1805706ce298b3f3cd55b353ecfd37aa7d35ae419331a49 inc/Module/Install/Metadata.pm
+SHA256 53825bc78e4c910b888160bc148c8bc211be58e02b99c8edcbf4854f95faa049 inc/Module/Install/ReadmeFromPod.pm
+SHA256 26b166ff62aacdb55317d1659f160aa4935097eea9810ea980e6d747206b5dc0 inc/Module/Install/Win32.pm
+SHA256 5f73a6851a91ea44e65b924f918743ad6e860620ad7a38a39d0295e0c5652a9f inc/Module/Install/WriteAll.pm
+SHA256 94218d46c94f8c1983d56c176a19417e7bea35b259ab19a99c7cf80f3f2d1702 t/Toolforge-MixNMatch-Struct-Catalog/01-use.t
+SHA256 bf5c49684f5be82e19f951b8898d99352909a34fba1aa89c30af4d956d7b7afe t/Toolforge-MixNMatch-Struct-Catalog/02-version.t
+SHA256 fb52ab3781498cf2d510fec1bef3a0a5931f9ebc45d38c0a87a6d1a85a816bcd t/Toolforge-MixNMatch-Struct-User/01-use.t
+SHA256 ce737c750cf919fac592cb9df1db1b1e73548ccb41fb2731dcd77e302ac02a95 t/Toolforge-MixNMatch-Struct-User/02-version.t
+SHA256 891e307704288bb68370a6ae6873fce5062fdc90d517c98dc8cc628a1e2cd9c3 t/Toolforge-MixNMatch-Struct-YearMonth/01-use.t
+SHA256 4e95e094c892a37d0c611ab7a5621b1fa6704bbcc3d60ae72cf766866d83b8a5 t/Toolforge-MixNMatch-Struct-YearMonth/02-version.t
+SHA256 c46976a6a19cbb18a7bbda5dd8eb3709d346f693e84fcc0a13154b87fa2b8e4a t/Toolforge-MixNMatch-Struct/01-use.t
+SHA256 a0faf8a6dae0ead6ddb57fb1b56654dc36cd4ea1c95c07ff81ed520bf98c5d2c t/Toolforge-MixNMatch-Struct/02-version.t
+SHA256 9c667ba9df162f86a435dd4127b6d6505fe5756372d0acd4aa27ddfbddfedc5a xt/Toolforge-MixNMatch-Struct-Catalog/01-pod_coverage.t
+SHA256 3928161e2560ef947f7a4a8b3457fc17b184e2dcc0b1619ebd220d01e3f53b47 xt/Toolforge-MixNMatch-Struct-Catalog/02-pod.t
+SHA256 9b0145dd7f73ab1381c5f896f41dcfbed4cf283d860a02b028c832883af3bcc1 xt/Toolforge-MixNMatch-Struct-User/01-pod_coverage.t
+SHA256 14225d72922ae76cd862d4df19d173fac8a6dab46aee31a8e9c16f170c27169a xt/Toolforge-MixNMatch-Struct-User/02-pod.t
+SHA256 4ea59427dec51e8181a08b24f1c6c0fbf45aeda31e5841fbe57a597076314568 xt/Toolforge-MixNMatch-Struct-YearMonth/01-pod_coverage.t
+SHA256 8087c59e9d247e9356c05bb7738505e64f8dd730b5208f730c13cecbf8bfee55 xt/Toolforge-MixNMatch-Struct-YearMonth/02-pod.t
+SHA256 79d525c4df72ebe1dc8f53da2ffd88b2fb37274b37db0ddc1facba0f62766750 xt/Toolforge-MixNMatch-Struct/01-pod_coverage.t
+SHA256 e592d57ada293298c92de62337bda602d1efd3fef4c1ae790d503b3e15c58b8c xt/Toolforge-MixNMatch-Struct/02-pod.t
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCgAdFiEEAxWqUSy7qDLVZJQKKyiOZjWerHYFAl/eKEQACgkQKyiOZjWe
+rHaciQf/fuqKXbMT0QVtorYJVbDUbBQjcGJn8TcoSF8KqvqUN+rGMCzO/ZpwMO+d
+y6zkXVANcQ/jIYJbTycl2Oc0YEyVKNtN7Hbjt/9N1c+uSsbn2QCoUcXOBrU0nx2M
+btL+ttzUFEku3Ckc4qZY5KE7WmSNJwyO9Jif8IccyEYaq//xgqG36fGd6kJ7FVCr
+QIi20xJ+dbIL3doWzG4Hqt2Pq0H//FTZsKjTd7hK633tnHd6NjE7grCndUctPFPL
+fB9cHhuAdALZB56glxRP4nSLRhWkP4gQMqGWt5PXRy/uThcrJijfHC57Tf5ZiakZ
+zsxq9MbelGmpdEuktO7yRyp5T3Htqg==
+=WcvV
+-----END PGP SIGNATURE-----
