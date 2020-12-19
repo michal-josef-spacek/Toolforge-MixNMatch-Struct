@@ -28,6 +28,8 @@ t/Toolforge-MixNMatch-Struct-User/03-obj2struct.t
 t/Toolforge-MixNMatch-Struct-User/04-struct2obj.t
 t/Toolforge-MixNMatch-Struct-YearMonth/01-use.t
 t/Toolforge-MixNMatch-Struct-YearMonth/02-version.t
+t/Toolforge-MixNMatch-Struct-YearMonth/03-obj2struct.t
+t/Toolforge-MixNMatch-Struct-YearMonth/04-struct2obj.t
 t/Toolforge-MixNMatch-Struct/01-use.t
 t/Toolforge-MixNMatch-Struct/02-version.t
 xt/Toolforge-MixNMatch-Struct-Catalog/01-pod_coverage.t
