@@ -5,7 +5,7 @@ use warnings;
 
 use Toolforge::MixNMatch::Object::User;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub obj2struct {
 	my $obj = shift;

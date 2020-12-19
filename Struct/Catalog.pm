@@ -7,7 +7,7 @@ use Toolforge::MixNMatch::Struct::User;
 use Toolforge::MixNMatch::Struct::YearMonth;
 use Toolforge::MixNMatch::Object::Catalog;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub obj2struct {
 	my $obj = shift;
