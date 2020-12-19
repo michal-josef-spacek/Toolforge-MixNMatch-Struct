@@ -12,7 +12,7 @@ sub obj2struct {
 
 	my $struct_hr = {
 		'cnt' => $obj->count,
-		'ym' => $obj->year.$obj->month,
+		'ym' => $obj->year.(sprintf '%02d', $obj->month),
 	};
 
 	return $struct_hr;
@@ -24,7 +24,7 @@ sub struct2obj {
 	my ($year, $month) = $struct_hr->{'ym'} =~ m/^(\d{4})(\d{2})$/ms;
 	my $obj = Toolforge::MixNMatch::Object::YearMonth->new(
 		'count' => $struct_hr->{'cnt'},
-		'month' => $month,
+		'month' => int($month),
 		'year' => $year,
 	);
 

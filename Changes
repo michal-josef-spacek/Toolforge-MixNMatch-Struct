@@ -1,5 +1,6 @@
 0.02
  - Add tests for User.
+ - Fix conversion of month in YearMonth class.
 
 0.01 2020-12-19T17:20:09+01:00
  - First version.
