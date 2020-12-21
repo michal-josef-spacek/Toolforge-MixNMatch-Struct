@@ -65,7 +65,7 @@ serialized via JSON to Mix'n'match application.
 
  my $struct_hr = obj2struct($obj);
 
-Convert Toolforge::MixNMatch::Object::Catalog instance to structure.
+Convert Toolforge::MixNMatch::Object::User instance to structure.
 
 Returns reference to hash with structure.
 
@@ -75,7 +75,7 @@ Returns reference to hash with structure.
 
 Convert structure of time to object.
 
-Returns Toolforge::MixNMatch::Object::Catalog instance.
+Returns Toolforge::MixNMatch::Object::User instance.
 
 =head1 EXAMPLE1
 
