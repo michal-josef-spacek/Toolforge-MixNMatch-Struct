@@ -78,7 +78,7 @@ Toolforge::MixNMatch::Struct::Catalog - Mix'n'match catalog structure serializat
 
 =head1 DESCRIPTION
 
-This conversion is between object defined in Toolforge::MixNMatch::Struct::Catalog and structure
+This conversion is between object defined in Toolforge::MixNMatch::Object::Catalog and structure
 serialized via JSON to Mix'n'match application.
 
 =head1 SUBROUTINES
