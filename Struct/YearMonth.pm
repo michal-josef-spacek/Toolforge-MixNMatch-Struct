@@ -1,9 +1,13 @@
 package Toolforge::MixNMatch::Struct::YearMonth;
 
+use base qw(Exporter);
 use strict;
 use warnings;
 
+use Readonly;
 use Toolforge::MixNMatch::Object::YearMonth;
+
+Readonly::Array our @EXPORT_OK => qw(obj2struct struct2obj);
 
 our $VERSION = 0.04;
 

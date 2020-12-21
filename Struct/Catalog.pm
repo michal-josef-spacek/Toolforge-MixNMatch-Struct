@@ -1,11 +1,15 @@
 package Toolforge::MixNMatch::Struct::Catalog;
 
+use base qw(Exporter);
 use strict;
 use warnings;
 
+use Readonly;
 use Toolforge::MixNMatch::Struct::User;
 use Toolforge::MixNMatch::Struct::YearMonth;
 use Toolforge::MixNMatch::Object::Catalog;
+
+Readonly::Array our @EXPORT_OK => qw(obj2struct struct2obj);
 
 our $VERSION = 0.04;
 
