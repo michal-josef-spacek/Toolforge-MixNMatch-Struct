@@ -3,30 +3,12 @@
 use strict;
 use warnings;
 
-use Toolforge::MixNMatch::Struct::Catalog qw(struct2obj);
+use Toolforge::MixNMatch::Struct::YearMonth qw(struct2obj);
 
 # Time structure.
 my $struct_hr = {
-        'user' => [{
-                'cnt' => 6,
-                'uid' => 1,
-                'username' => 'Skim',
-        }, {
-                'cnt' => 4,
-                'uid' => 2,
-                'username' => 'Foo',
-        }],
-        'type' => [{
-                'cnt' => 10,
-                'type' => 'Q5',
-        }],
-        'ym' => [{
-                'cnt' => 2,
-                'ym' => 202009,
-        }, {
-                'cnt' => 8,
-                'ym' => 202010,
-        }],
+       'cnt' => 6,
+       'ym' => 202009,
 };
 
 # Get object.
@@ -35,23 +17,18 @@ my $obj = struct2obj($struct_hr);
 # Get count.
 my $count = $obj->count;
 
-# Get type.
-my $type = $obj->type;
+# Get month.
+my $month = $obj->month;
 
-# Get user statistics.
-my $users_ar = $obj->users;
-
-# Get year/month statistics.
-my $year_months_ar = $obj->year_months;
+# Get year.
+my $year = $obj->year;
 
 # Print out.
 print "Count: $count\n";
-print "Type: $type\n";
-print "Count of users: ".(scalar @{$users_ar})."\n";
-print "Count of year/months: ".(scalar @{$year_months_ar})."\n";
+print "Month: $month\n";
+print "Year: $year\n";
 
 # Output:
-# Count: 10
-# Type: Q5
-# Count of users: 2
-# Count of year/months: 2
+# Count: 6
+# Month: 9
+# Year: 2020
