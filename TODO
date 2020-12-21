@@ -1,6 +1,5 @@
 TODO
 ====
-1. Doc for catalog
 2. Doc for user
 3. Doc for YearMonth
 5. Check to objects.
@@ -10,3 +9,6 @@ Applied
 =======
 4. Tests.
 OK [20201219] skim
+
+1. Doc for catalog
+OK [20201221] skim
