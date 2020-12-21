@@ -7,13 +7,13 @@ DESCRIPTION
 
 SEE ALSO
     Toolforge::MixNMatch::Struct::Catalog
-        TODO
+        Mix'n'match catalog structure serialization.
 
     Toolforge::MixNMatch::Struct::User
-        TODO
+        Mix'n'match user structure serialization.
 
     Toolforge::MixNMatch::Struct::YearMonth
-        TODO
+        Mix'n'match year/month structure serialization.
 
 REPOSITORY
     <https://github.com/michal-josef-spacek/Toolforge-MixNMatch-Struct>

@@ -28,15 +28,15 @@ This distributions is set of basic conversions from/to Toolforge Mix'n'match too
 
 =item L<Toolforge::MixNMatch::Struct::Catalog>
 
-TODO
+Mix'n'match catalog structure serialization.
 
 =item L<Toolforge::MixNMatch::Struct::User>
 
-TODO
+Mix'n'match user structure serialization.
 
 =item L<Toolforge::MixNMatch::Struct::YearMonth>
 
-TODO
+Mix'n'match year/month structure serialization.
 
 =back
 
