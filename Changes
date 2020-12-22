@@ -1,4 +1,5 @@
 0.04
+ - Add checks for object in obj2struct() in all classes.
  - Add doc for Catalog. And examples for it.
  - Add doc for User. And examples for it.
  - Add doc for YearMonth. And examples for it.

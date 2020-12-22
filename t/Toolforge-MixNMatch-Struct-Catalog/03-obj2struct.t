@@ -1,7 +1,9 @@
 use strict;
 use warnings;
 
-use Test::More 'tests' => 3;
+use English;
+use Error::Pure::Utils qw(clean);
+use Test::More 'tests' => 5;
 use Test::NoWarnings;
 use Toolforge::MixNMatch::Object::Catalog;
 use Toolforge::MixNMatch::Object::User;
@@ -83,3 +85,18 @@ is_deeply(
 	},
 	'Advance conversion.',
 );
+
+# Test.
+eval {
+	Toolforge::MixNMatch::Struct::Catalog::obj2struct();
+};
+is($EVAL_ERROR, "Object doesn't exist.\n", "Object doesn't exist.");
+clean();
+
+# Test.
+eval {
+	Toolforge::MixNMatch::Struct::Catalog::obj2struct('bad');
+};
+is($EVAL_ERROR, "Object isn't 'Toolforge::MixNMatch::Object::Catalog'.\n",
+	"Object isn't 'Toolforge::MixNMatch::Object::Catalog'.");
+clean();

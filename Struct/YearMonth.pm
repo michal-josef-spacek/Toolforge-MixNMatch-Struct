@@ -4,6 +4,7 @@ use base qw(Exporter);
 use strict;
 use warnings;
 
+use Error::Pure qw(err);
 use Readonly;
 use Toolforge::MixNMatch::Object::YearMonth;
 
@@ -13,6 +14,13 @@ our $VERSION = 0.04;
 
 sub obj2struct {
 	my $obj = shift;
+
+	if (! defined $obj) {
+		err "Object doesn't exist.";
+	}
+	if (! $obj->isa('Toolforge::MixNMatch::Object::YearMonth')) {
+		err "Object isn't 'Toolforge::MixNMatch::Object::YearMonth'.";
+	}
 
 	my $struct_hr = {
 		'cnt' => $obj->count,
@@ -76,6 +84,12 @@ Returns reference to hash with structure.
 Convert structure of time to object.
 
 Returns Toolforge::MixNMatch::Object::YearMonth instance.
+
+=head1 ERRORS
+
+ obj2struct():
+         Object doesn't exist.
+         Object isn't 'Toolforge::MixNMatch::Object::YearMonth'.
 
 =head1 EXAMPLE1
 
@@ -142,6 +156,7 @@ Returns Toolforge::MixNMatch::Object::YearMonth instance.
 
 =head1 DEPENDENCIES
 
+L<Error::Pure>,
 L<Exporter>,
 L<Readonly>,
 L<Toolforge::MixNMatch::Struct::YearMonth>.

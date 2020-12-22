@@ -4,6 +4,7 @@ use base qw(Exporter);
 use strict;
 use warnings;
 
+use Error::Pure qw(err);
 use Readonly;
 use Toolforge::MixNMatch::Object::Catalog;
 use Toolforge::MixNMatch::Struct::User;
@@ -15,6 +16,13 @@ our $VERSION = 0.04;
 
 sub obj2struct {
 	my $obj = shift;
+
+	if (! defined $obj) {
+		err "Object doesn't exist.";
+	}
+	if (! $obj->isa('Toolforge::MixNMatch::Object::Catalog')) {
+		err "Object isn't 'Toolforge::MixNMatch::Object::Catalog'.";
+	}
 
 	my $struct_hr = {
 		'type' => [{
@@ -98,6 +106,12 @@ Returns reference to hash with structure.
 Convert structure of time to object.
 
 Returns Toolforge::MixNMatch::Object::Catalog instance.
+
+=head1 ERRORS
+
+ obj2struct():
+         Object doesn't exist.
+         Object isn't 'Toolforge::MixNMatch::Object::Catalog'.
 
 =head1 EXAMPLE1
 
@@ -236,6 +250,7 @@ Returns Toolforge::MixNMatch::Object::Catalog instance.
 
 =head1 DEPENDENCIES
 
+L<Error::Pure>,
 L<Exporter>,
 L<Readonly>,
 L<Toolforge::MixNMatch::Object::Catalog>,

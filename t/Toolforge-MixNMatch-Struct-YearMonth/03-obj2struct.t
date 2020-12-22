@@ -1,7 +1,10 @@
 use strict;
+
 use warnings;
 
-use Test::More 'tests' => 2;
+use English;
+use Error::Pure::Utils qw(clean);
+use Test::More 'tests' => 4;
 use Test::NoWarnings;
 use Toolforge::MixNMatch::Object::YearMonth;
 use Toolforge::MixNMatch::Struct::YearMonth;
@@ -21,3 +24,18 @@ is_deeply(
 	},
 	'Simple conversion.',
 );
+
+# Test.
+eval {
+	Toolforge::MixNMatch::Struct::YearMonth::obj2struct();
+};
+is($EVAL_ERROR, "Object doesn't exist.\n", "Object doesn't exist.");
+clean();
+
+# Test.
+eval {
+	Toolforge::MixNMatch::Struct::YearMonth::obj2struct('bad');
+};
+is($EVAL_ERROR, "Object isn't 'Toolforge::MixNMatch::Object::YearMonth'.\n",
+	"Object isn't 'Toolforge::MixNMatch::Object::YearMonth'.");
+clean();

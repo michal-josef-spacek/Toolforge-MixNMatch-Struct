@@ -23,6 +23,7 @@ no_index:
     - t
     - xt
 requires:
+  Error::Pure: 0
   Exporter: 0
   Readonly: 0
   Toolforge::MixNMatch::Object: 0.02

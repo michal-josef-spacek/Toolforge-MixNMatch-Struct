@@ -18,12 +18,15 @@ name 'Toolforge-MixNMatch-Struct';
 perl_version 5.006002;
 readme_from 'Struct.pm';
 recursive_author_tests('xt');
+requires 'Error::Pure' => 0;
 requires 'Exporter' => 0;
 requires 'Readonly' => 0;
 requires 'Toolforge::MixNMatch::Object' => 0.02;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Toolforge-MixNMatch-Struct/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Toolforge-MixNMatch-Struct';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Toolforge-MixNMatch-Struct';
+test_requires 'English' => 0;
+test_requires 'Error::Pure::Utils' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;
