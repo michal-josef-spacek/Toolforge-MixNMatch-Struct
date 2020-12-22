@@ -6,4 +6,4 @@ use Test::NoWarnings;
 use Toolforge::MixNMatch::Struct::YearMonth;
 
 # Test.
-is($Toolforge::MixNMatch::Struct::YearMonth::VERSION, 0.04, 'Version.');
+is($Toolforge::MixNMatch::Struct::YearMonth::VERSION, 0.05, 'Version.');
